@@ -1,0 +1,85 @@
+
+@font-face {
+  font-family: GloriaHallelujah;
+  src: url('./fonts/GloriaHallelujah-Regular.ttf');
+}
+@font-face {
+  font-family: Bangers;
+  src: url('./fonts/Bangers-Regular.ttf');
+}
+
+
+:root {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+
+}
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    color: #000000;
+    margin: auto;
+    text-align: center;
+    font-family: GloriaHallelujah;
+  }
+  table td, table th {
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  
+  table thead {
+    font-weight:900;
+    font-style: oblique 20deg;
+  }
+
+  .table-time {
+
+  }
+  
+
+  .table-band {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .friday-table table {
+    background-color: rgb(234, 153, 153);
+    color: #000000;
+  }
+  
+  .friday-table table thead {
+    background-color: rgb(187,38,26);
+  }
+
+
+  .saturday-table table {
+    background-color: rgb(217, 210, 233);
+    color: #000000;
+  }
+  
+  .saturday-table table thead {
+    background-color: rgb(142, 124, 195);
+  }
+
+  .sunday-table table {
+    background-color: rgb(182, 215, 168);
+    color: #000000;
+  }
+  
+  .sunday-table table thead {
+    background-color: rgb(106, 168, 79);
+  }
+
+  table .table-doors {
+    font-family: Bangers;
+    font-size: 1.5rem;
+  }
