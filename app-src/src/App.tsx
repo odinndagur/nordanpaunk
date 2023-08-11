@@ -116,12 +116,17 @@ function DayScheduleTable({
 									}}
 									colSpan={2}
 								>
-									<div style={{ textAlign: alignText }}>
-										{set[2].length ? set[2] : set[1]}
-									</div>
+									{set.length == 4 ? <a href={set[3]}> {/*have a youtube video*/}
+										<div style={{ textAlign: alignText }}>
+											{set[2].length ? set[2] : set[1]}
+										</div>
+									</a> : <div style={{ textAlign: alignText,color:'gray' }}>
+											{set[2].length ? set[2] : set[1]}
+										</div>}
 								</td>
 								{/* <td className='table-band' style={{borderRight:'none',borderLeft:'none'}}>{set[2]}</td> */}
 							</tr>
+
 						)
 					})}
 				</tbody>
@@ -178,7 +183,7 @@ function App() {
 		['7:00 PM', 'LÍKAMI', ''],
 		['7:30 PM', '', ''],
 		['8:00 PM', 'DÖDSRIT', ''],
-		['8:30 PM', '', 'TONTO'],
+		['8:30 PM', '', 'TONTO','https://www.youtube.com/watch?v=MRse5xU6BRs'],
 		['9:00 PM', 'ISKANDR', ''],
 		['9:30 PM', '', 'RONJA'],
 		['10:00 PM', 'HEXHEXHEX', ''],
@@ -202,11 +207,11 @@ function App() {
 		['5:00 PM', 'MONDERNTE', ''],
 		['5:30 PM', '', 'THE BOOB SWEAT GANG'],
 		['6:00 PM', 'VIRGIN ORCHESTRA', ''],
-		['6:30 PM', '', 'MARTIAN MOTORS'],
+		['6:30 PM', '', 'MARTIAN MOTORS','https://www.youtube.com/watch?v=f2FEaXnnRPc'],
 		['7:00 PM', '', ''],
 		['7:30 PM', '', ''],
 		['8:00 PM', 'FLESH MACHINE', ''],
-		['8:30 PM', '', 'ROHT'],
+		['8:30 PM', '', 'ROHT','https://www.youtube.com/watch?v=xkB87AwgEpE'],
 		['9:00 PM', 'MSEA', ''],
 		['9:30 PM', '', 'AERIAL RUIN'],
 		['10:00 PM', 'DYS', ''],
@@ -214,7 +219,7 @@ function App() {
 		['11:00 PM', 'GODCHILLA', ''],
 		['11:40 PM', '', 'XOZVØNX'],
 		['12:10 AM', 'FLUISTERAARS', ''],
-		['12:40 AM', '', 'GÓÐXÆRI'],
+		['12:40 AM', '', 'GÓÐXÆRI','https://www.youtube.com/watch?v=lAGR47ph1v4'],
 		['1:00 AM', '', ''],
 		['1:20 AM', 'GHOSTIGITAL', ''],
 		['2:00 AM', '', ''],
@@ -224,7 +229,7 @@ function App() {
 	const sundayData = [
 		// ['5:00 PM', '-DOORS-',''],
 		['3:00 PM', 'RAYIN', ''],
-		['3:30 PM', '', 'CHILLERA'],
+		['3:30 PM', '', 'CHILLERA','https://www.youtube.com/watch?v=dWc68oSYWNY'],
 		['4:00 PM', 'ULTRA MAGNUS', ''],
 		['4:30 PM', '', 'EILÍF SJÁLFSFRÓUN'],
 		['5:00 PM', 'PTHUMULHU', ''],
@@ -234,7 +239,7 @@ function App() {
 		['7:00 PM', '', ''],
 		['7:30 PM', '', ''],
 		['8:00 PM', 'ÓREIÐA', ''],
-		['8:30 PM', '', 'DREYMANDI HUNDUR'],
+		['8:30 PM', '', 'DREYMANDI HUNDUR','https://www.youtube.com/watch?v=K6wjPR8Vdl0'],
 		['9:00 PM', 'SKOFFÍN', ''],
 		['9:30 PM', '', 'DAUÐYFLIN'],
 		['10:00 PM', 'ÖRMAGNA', ''],
