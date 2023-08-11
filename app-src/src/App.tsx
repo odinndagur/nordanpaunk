@@ -125,7 +125,7 @@ function DayScheduleTable({
 						)
 					})}
 				</tbody>
-				<tfoot style={{ position: 'relative' }}>
+				<tfoot>
 					<tr style={{ backgroundColor: 'rgb(153,0,0)', color: 'white' }}>
 						<td
 							className='table-time'
@@ -133,22 +133,41 @@ function DayScheduleTable({
 						>
 							{footerSet[0]}
 						</td>
-						<td style={{ borderRight: 'none', borderLeft: 'none' }} colSpan={2}>
+						<td
+							style={{
+								borderRight: 'none',
+								borderLeft: 'none',
+								textAlign: 'center',
+							}}
+						>
 							{' '}
 							{footerSet[1]}
 						</td>
+						<td
+							style={{
+								position: 'relative',
+								borderRight: 'none',
+								borderLeft: 'none',
+								width: '20%',
+							}}
+						>
+							<img
+								style={{
+									position: 'absolute',
+									bottom: '-1rem',
+									right: '-1rem',
+									maxWidth: '70%',
+								}}
+								src={footerImage}
+								alt=''
+							/>
+						</td>
 					</tr>
-					<img
-						style={{ position: 'absolute', bottom: '-1rem', right: '-1rem',maxWidth:'20%' }}
-						src={footerImage}
-						alt=''
-					/>
 				</tfoot>
 			</table>
 		</div>
 	)
 }
-
 
 function App() {
 	const fridayData = [
@@ -173,7 +192,7 @@ function App() {
 	]
 	const fridayFooter = ['2:?? AM', 'FIRE: SANGRE DE MUERDAGO']
 
-  const saturdayData =[
+	const saturdayData = [
 		// ['5:00 PM', '-DOORS-',''],
 		['2:30 PM', '', 'DUSILMENNI'],
 		['3:00 PM', 'ÁSLAUG DUNGAL', ''],
@@ -202,7 +221,7 @@ function App() {
 	]
 	const saturdayFooter = ['2:?? AM', 'FIRE: KVLTGÖRN']
 
-  const sundayData = [
+	const sundayData = [
 		// ['5:00 PM', '-DOORS-',''],
 		['3:00 PM', 'RAYIN', ''],
 		['3:30 PM', '', 'CHILLERA'],
@@ -233,19 +252,27 @@ function App() {
 		<>
 			<div
 				style={{
-					display: 'grid',
-					gridTemplateColumns: '1fr 1fr',
-					alignItems: 'center',
 					gap: 0,
 					margin: 'auto',
 					boxSizing: 'border-box',
 					padding: '0 3rem',
-					maxWidth: '600px',
+					// width: 'min(100vw,600px)',
+          maxWidth:'100vw'
 					// justifyContent: 'center',
 				}}
 			>
-				<img src={np_svg} alt='' />
-				<img src={year_svg} alt='' />
+				<div
+					style={{
+						// display: 'grid',
+						// gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+						// alignItems: 'center',
+            // justifyContent:'center',
+            // margin:'auto'
+					}}
+				>
+					<img src={np_svg} alt='' style={{margin:'auto'}} />
+					<img src={year_svg} alt='' style={{margin:'auto'}} />
+				</div>
 			</div>
 			<DayScheduleTable
 				sets={fridayData}
