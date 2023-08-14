@@ -213,7 +213,7 @@ function App() {
 		['8:00 PM', 'FLESH MACHINE', ''],
 		['8:30 PM', '', 'ROHT','https://www.youtube.com/watch?v=xkB87AwgEpE'],
 		['9:00 PM', 'MSEA', ''],
-		['9:30 PM', '', 'AERIAL RUIN'],
+		['9:30 PM', '', 'AERIAL RUIN', 'https://www.youtube.com/watch?v=f-JEe8kTFiQ'],
 		['10:00 PM', 'DYS', ''],
 		['10:30 PM', '', ''],
 		['11:00 PM', 'GODCHILLA', ''],
@@ -268,6 +268,7 @@ function App() {
 			>
 				<div
 					style={{
+						paddingBottom:'3rem'
 						// display: 'grid',
 						// gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
 						// alignItems: 'center',
