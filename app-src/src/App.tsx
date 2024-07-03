@@ -218,7 +218,7 @@ function App() {
 		['10:30 PM', '', ''],
 		['11:00 PM', 'GODCHILLA', ''],
 		['11:40 PM', '', 'XOZVØNX','https://www.youtube.com/watch?v=k8ukAbkGmNg'],
-		['12:10 AM', 'FLUISTERAARS', ''],
+		['12:10 AM', 'FLUISTERAARS', 'https://www.youtube.com/watch?v=SqvWGQk6Vm0'],
 		['12:40 AM', '', 'GÓÐXÆRI','https://www.youtube.com/watch?v=lAGR47ph1v4'],
 		['1:00 AM', '', ''],
 		['1:20 AM', 'GHOSTIGITAL', ''],
